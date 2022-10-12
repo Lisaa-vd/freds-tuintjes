@@ -1,0 +1,69 @@
+// IMPORT FONT (Anek Gujarati)
+@import url('https://fonts.googleapis.com/css2?family=Anek+Gujarati&family=Maven+Pro&display=swap');
+
+// VARIABLES
+
+$donkergroen: #004C00;
+$lichtgroen: #007900;
+
+
+* {
+  margin: 0;
+  font-family: 'Anek Gujarati', sans-serif;
+}
+
+// HEADER
+
+.con-header {
+  overflow-x: hidden;
+  min-height: 90px;
+  max-width: 100%;
+  min-width: 100%;
+  background-color: white;
+  border-bottom: 2px solid black;
+  display: grid;
+  grid-template-columns: 1fr 0.4fr 1fr;
+  padding: 10px;
+}
+
+// HEADER START
+
+
+
+// HEADER MAIN
+
+.header-main {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.main-text {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.foto-schep {
+  max-height: 40px;
+}
+
+// HEADER END
+
+.header-end {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.header-btn {
+  background-color: $lichtgroen;
+  border: 2px solid $donkergroen;
+  color: white;
+  border-radius: 50px;
+  padding: 5px;
+  min-width: 100px;
+  max-height: 40px;
+  font-size: 1.1em;
+}

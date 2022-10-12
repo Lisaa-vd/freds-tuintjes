@@ -1,0 +1,107 @@
+// IMPORT FONT (MAVEN PRO)
+@import url('https://fonts.googleapis.com/css2?family=Anek+Gujarati&family=Maven+Pro&display=swap');
+
+// VARIABLES
+
+$donkergroen: #005b00;
+$lichtgroen: #007900;
+
+* {
+  margin: 0;
+  font-family: 'Anek Gujarati', sans-serif;
+}
+
+::selection {
+  color: white;
+  background: $donkergroen;
+}
+
+// INDEX.PHP
+
+.grid-index-1 {
+  display: grid;
+}
+
+.index-foto {
+  position: relative;
+  text-align: center;
+}
+
+.foto-tuin {
+  min-width: 100%;
+  max-height: 450px;
+}
+
+.foto-text-1 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.foto-text-2 {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.foto-blokken {
+  margin: 0 24%;
+  min-width: 790px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.foto-blok {
+  background-color: white;
+  min-width: 250px;
+  min-height: 50px;
+
+  & h3 {
+    margin-top: 0.5em;
+  }
+}
+
+// INDEX 2
+
+.grid-index-2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  background-color: #f1f1f1;
+}
+
+.index-2-main {
+  display: flex;
+  justify-content: center;
+}
+
+.categorie {
+  margin: 0 10px;
+  max-width: 250px;
+  max-height: 275px;
+  min-width: 250px;
+  min-height: 275px;
+  text-align: center;
+  background-color: white;
+}
+
+.cat-btn {
+  border: 1px solid $donkergroen;
+  background-color: $donkergroen;
+  border-radius: 80px;
+  color: white;
+  padding: 5px;
+  min-width: 100px;
+
+  & a, a:visited, a:active {
+    color: white;
+  }
+
+  & a:hover {
+    color: #ffd52f;
+    text-decoration: none;
+  }
+}
